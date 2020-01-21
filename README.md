@@ -44,9 +44,9 @@ https://pagination-application.herokuapp.com/apps
 
 ## by (required for all parameter searches)
 
-  Defines which field to search for results by. Required for all searches with parameters.
+    Defines which field to search for results by. Required for all searches with parameters.
 
-  Options: id or name
+    Options: id or name
 
 ### Examples:
 
@@ -60,8 +60,8 @@ https://pagination-application.herokuapp.com/apps?by=name&start=my-app-052
 
 
 ## start
-  Defines which entry to start your search on. Options vary depending on by. If no start is declared 
-  the API will search from the first entry.
+    Defines which entry to start your search on. Options vary depending on by. If no start is declared 
+    the API will search from the first entry.
 
 ### Examples:
 
@@ -69,19 +69,19 @@ https://pagination-application.herokuapp.com/apps?by=name&start=my-app-052
 
 https://pagination-application.herokuapp.com/apps?by=id&start=45
 
-  Default: 1
-  Options: 1 to 250
+    Default: 1
+    Options: 1 to 250
 
 #### By name:
 
 https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045
 
-  Default: my-app-001
-  Options: my-app-001 to my-app-250
+    Default: my-app-001
+    Options: my-app-001 to my-app-250
 
 ## end
-  Defines which entry to end your search on. Options vary depending on by. If no end is declared 
-  the API will search to the last entry.
+    Defines which entry to end your search on. Options vary depending on by. If no end is declared 
+    the API will search to the last entry.
 
 ### Examples:
 
@@ -89,15 +89,15 @@ https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045
 
 https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66
 
-  Default: 250
-  Options: 1 to 250
+    Default: 250
+    Options: 1 to 250
 
 #### By name:
 
 https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045&end=my-app-66
 
-  Default: my-app-250
-  Options: my-app-001 to my-app-250
+    Default: my-app-250
+    Options: my-app-001 to my-app-250
 
 ## max
   Defines the maximum number of apps returned by the API. The API will return a maximum of 50 entries.
@@ -106,20 +106,20 @@ https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045&end=m
 
 https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66&max=10
 
-  Default: 50
-  Options: 1-50
+    Default: 50
+    Options: 1-50
 
 The API will never return more than 50 entries, even if max is set higher.
 
 ## order
-  Defines what order the results will be received in. If no order is declared the API 
-  will return results in ascending order.
+    Defines what order the results will be received in. If no order is declared the API 
+    will return results in ascending order.
 
 ### Example:
 
 https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66&max=10&order=desc
 
-  Default: asc
-  Options: desc, asc 
+    Default: asc
+    Options: desc, asc 
 
 
