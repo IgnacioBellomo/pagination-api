@@ -94,7 +94,7 @@ https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66
 
 #### By name:
 
-https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045&end=my-app-66
+https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045&end=my-app-066
 
     Default: my-app-250
     Options: my-app-001 to my-app-250
