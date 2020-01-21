@@ -3,6 +3,10 @@ const router      = express.Router();
 const App         = require('../models/apps.js');
 
 /* GET home page */
+router.get('/', async (req, res, next) => {
+  res.redirect('/apps');
+})
+
 router.get('/apps', async (req, res, next) => {
   let max = 50, start, order = 'asc';
   if (req.query.order){
