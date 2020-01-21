@@ -14,17 +14,15 @@ This is a simple HTTP API endpoint that will perform pagination.
 
     npm run dev
 
-# How it works
+# Get list of Apps using default parameters
 
-## Get list of Apps using default parameters
-
-### Request
+## Request
 
 `GET /apps/`
 
-  https://pagination-application.herokuapp.com/apps
+  [https://pagination-application.herokuapp.com/apps]
 
-### Response
+## Response
 
     [
       {
@@ -42,9 +40,10 @@ This is a simple HTTP API endpoint that will perform pagination.
       }
     ]
 
-## Request apps using parameters
+# Request apps using query parameters
 
-  ### by (required for all parameter searches)
+  ## by (required for all parameter searches)
+
     Defines which field to search for results by. Required for all searches with parameters.
 
     Options: id or name
@@ -53,10 +52,11 @@ This is a simple HTTP API endpoint that will perform pagination.
 
     By id:
 
-    https://pagination-application.herokuapp.com/apps?by=id&start=52
+    [https://pagination-application.herokuapp.com/apps?by=id&start=52]
 
     By name:
-    https://pagination-application.herokuapp.com/apps?by=name&start=my-app-052
+
+    [https://pagination-application.herokuapp.com/apps?by=name&start=my-app-052]
   
 
   ### start
@@ -67,13 +67,14 @@ This is a simple HTTP API endpoint that will perform pagination.
 
     By id:
 
-    https://pagination-application.herokuapp.com/apps?by=id&start=45
+    [https://pagination-application.herokuapp.com/apps?by=id&start=45]
+
     Default: 1
     Options: 1 to 250
 
     By name:
 
-    https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045
+    [https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045]
 
     Default: my-app-001
     Options: my-app-001 to my-app-250
@@ -86,14 +87,14 @@ This is a simple HTTP API endpoint that will perform pagination.
 
     By id: 1-250
 
-    https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66
+    [https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66]
 
     Default: 250
     Options: 1 to 250
 
     By name:
 
-    https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045&end=my-app-66
+    [https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045&end=my-app-66]
 
     Default: my-app-250
     Options: my-app-001 to my-app-250
@@ -103,7 +104,7 @@ This is a simple HTTP API endpoint that will perform pagination.
 
     Example:
 
-    https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66&max=10
+    [https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66&max=10]
 
     Default: 50
     Options: 1-50
@@ -116,7 +117,7 @@ This is a simple HTTP API endpoint that will perform pagination.
 
     Example:
 
-    https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66&max=10&order=desc
+    [https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66&max=10&order=desc]
     
     Default: asc
     Options: desc, asc 
