@@ -30,7 +30,7 @@ https://pagination-application.herokuapp.com/apps
     ]
 
 ## Request apps using query parameters
-  All of these fields are optional, except for by. If any are excluded, the default option will be assumed.
+  All of these fields are optional, except for `by`. If any but `by` are excluded, the default option will be assumed.
 
 ## by (required for all parameter searches)
 
