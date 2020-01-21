@@ -28,7 +28,8 @@ https://pagination-application.herokuapp.com/apps
       }
     ]
 
-# Request apps using query parameters
+## Request apps using query parameters
+  All of these fields are optional, except for by. If any are excluded, the default option will be assumed.
 
 ## by (required for all parameter searches)
 
@@ -48,7 +49,7 @@ https://pagination-application.herokuapp.com/apps?by=name&start=my-app-052
 
 
 ## start
-  Defines which entry to start your search on. Options vary depending on by. If no start is declared 
+  Defines which entry to start your search on. Options vary depending on by. If no start is declared, 
   the API will search from the first entry.
 
 ### Examples:
@@ -68,7 +69,7 @@ https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045
     Options: my-app-001 to my-app-250
 
 ## end
-  Defines which entry to end your search on. Options vary depending on by. If no end is declared 
+  Defines which entry to end your search on. Options vary depending on by. If no end is declared, 
   the API will search to the last entry.
 
 ### Examples:
@@ -88,8 +89,8 @@ https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045&end=m
     Options: my-app-001 to my-app-250
 
 ## max
-  Defines the maximum number of apps returned by the API. The API will never return 
-  more than 50 entries.
+  Defines the maximum number of apps returned by the API. If no max is declared, the API will return a 
+  maximum of 50 entries. The API will never return more than 50 entries.
 
 ### Example:
 
@@ -99,7 +100,7 @@ https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66&max=10
     Options: 1-50
 
 ## order
-  Defines what order the results will be received in. If no order is declared the API 
+  Defines what order the results will be received in. If no order is declared, the API 
   will return results in ascending order.
 
 ### Example:
