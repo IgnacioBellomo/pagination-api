@@ -2,18 +2,6 @@
 
 This is a simple HTTP API endpoint that will perform pagination. 
 
-`models/apps.js` is the model upon which each data entry was built on
-
-`routes/index.js` contains the only route accesible by this API
-
-## Install
-
-    npm install
-
-## Run the API
-
-    npm run dev
-
 # Get list of Apps using default parameters
 
 ## Request
@@ -44,7 +32,7 @@ https://pagination-application.herokuapp.com/apps
 
 ## by (required for all parameter searches)
 
-    Defines which field to search for results by. Required for all searches with parameters.
+  Defines which field to search for results by. Required for all searches with parameters.
 
     Options: id or name
 
@@ -60,8 +48,8 @@ https://pagination-application.herokuapp.com/apps?by=name&start=my-app-052
 
 
 ## start
-    Defines which entry to start your search on. Options vary depending on by. If no start is declared 
-    the API will search from the first entry.
+  Defines which entry to start your search on. Options vary depending on by. If no start is declared 
+  the API will search from the first entry.
 
 ### Examples:
 
@@ -80,8 +68,8 @@ https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045
     Options: my-app-001 to my-app-250
 
 ## end
-    Defines which entry to end your search on. Options vary depending on by. If no end is declared 
-    the API will search to the last entry.
+  Defines which entry to end your search on. Options vary depending on by. If no end is declared 
+  the API will search to the last entry.
 
 ### Examples:
 
@@ -100,8 +88,8 @@ https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045&end=m
     Options: my-app-001 to my-app-250
 
 ## max
-    Defines the maximum number of apps returned by the API. The API will never return 
-    more than 50 entries.
+  Defines the maximum number of apps returned by the API. The API will never return 
+  more than 50 entries.
 
 ### Example:
 
@@ -111,8 +99,8 @@ https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66&max=10
     Options: 1-50
 
 ## order
-    Defines what order the results will be received in. If no order is declared the API 
-    will return results in ascending order.
+  Defines what order the results will be received in. If no order is declared the API 
+  will return results in ascending order.
 
 ### Example:
 
