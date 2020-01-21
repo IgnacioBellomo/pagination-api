@@ -52,7 +52,8 @@ This is a simple HTTP API endpoint that will perform pagination.
     Options: id , name
 
   #### start
-    Defines which entry to start your search on. Varies depending on by. If no start is declared the API will search from the first entry
+    Defines which entry to start your search on. Varies depending on by. If no start is declared 
+    the API will search from the first entry
 
     Example:
 
@@ -67,7 +68,8 @@ This is a simple HTTP API endpoint that will perform pagination.
     Options: my-app-001-my-app-250
 
   #### end
-    Defines which entry to end your search on. Varies depending on by. If no end is declared the API will search to the last entry
+    Defines which entry to end your search on. Varies depending on by. If no end is declared 
+    the API will search to the last entry
 
     Example:
 
@@ -93,7 +95,8 @@ This is a simple HTTP API endpoint that will perform pagination.
     The API will never return more than 50 entries, even if max is set higher.
 
   #### order
-    Defines what order the results will be received in. If no order is declared the API will return results in ascending order.
+    Defines what order the results will be received in. If no order is declared the API 
+    will return results in ascending order.
 
     Example:
 
