@@ -44,9 +44,7 @@ This is a simple HTTP API endpoint that will perform pagination.
 
 ## Request apps using parameters
 
-### Parameters available
-
-  #### by (required for all parameter searches)
+  ### by (required for all parameter searches)
     Defines which field to search for results by. Required for all searches with parameters.
 
     Options: id or name
@@ -61,7 +59,7 @@ This is a simple HTTP API endpoint that will perform pagination.
     https://pagination-application.herokuapp.com/apps?by=name&start=my-app-052
   
 
-  #### start
+  ### start
     Defines which entry to start your search on. Options vary depending on by. If no start is declared 
     the API will search from the first entry.
 
@@ -80,7 +78,7 @@ This is a simple HTTP API endpoint that will perform pagination.
     Default: my-app-001
     Options: my-app-001 to my-app-250
 
-  #### end
+  ### end
     Defines which entry to end your search on. Options vary depending on by. If no end is declared 
     the API will search to the last entry.
 
@@ -100,7 +98,7 @@ This is a simple HTTP API endpoint that will perform pagination.
     Default: my-app-250
     Options: my-app-001 to my-app-250
 
-  #### max
+  ### max
     Defines the maximum number of apps returned by the API. The API will return a maximum of 50 entries.
 
     Example:
@@ -112,7 +110,7 @@ This is a simple HTTP API endpoint that will perform pagination.
     
     The API will never return more than 50 entries, even if max is set higher.
 
-  #### order
+  ### order
     Defines what order the results will be received in. If no order is declared the API 
     will return results in ascending order.
 
