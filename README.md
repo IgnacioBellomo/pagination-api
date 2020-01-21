@@ -100,7 +100,8 @@ https://pagination-application.herokuapp.com/apps?by=name&start=my-app-045&end=m
     Options: my-app-001 to my-app-250
 
 ## max
-  Defines the maximum number of apps returned by the API. The API will return a maximum of 50 entries.
+    Defines the maximum number of apps returned by the API. The API will never return 
+    more than 50 entries.
 
 ### Example:
 
@@ -108,8 +109,6 @@ https://pagination-application.herokuapp.com/apps?by=id&start=45&end=66&max=10
 
     Default: 50
     Options: 1-50
-
-The API will never return more than 50 entries, even if max is set higher.
 
 ## order
     Defines what order the results will be received in. If no order is declared the API 
