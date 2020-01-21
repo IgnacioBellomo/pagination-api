@@ -1,6 +1,7 @@
 # Pagination-API
 
-This is a simple HTTP API endpoint that will perform pagination. 
+This is a simple HTTP API endpoint that will perform pagination. I created a seed with 250 entries, 
+and I stored it on MongoDB Atlas. The pagination is performed using query parameters. 
 
 # Get list of Apps using default parameters
 
